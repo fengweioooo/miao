@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgba(0, 0, 0, 0.08);
+            
+        }
+    div{
+        border: 10px solid #ffffff;
+        border-radius:25px; 
+        width: 150px;
+        height: 75px;
+        background-color: #ffffff;
+    }
+    h1{
+        width: 125px;
+        height: 50px;
+        border: 1px solid;
+        border-radius:25px; 
+        margin-top : 10px;
+        margin-left:5px ;
+        transition: 3s ;
+        }
+    label{
+        background-image: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2881261660,998905785&fm=27&gp=0.jpg);
+        border: 1px solid;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+        background-position: 0 0;
+        transition: 2s ;
+        position: absolute;
+    }
+    input:checked+h1{
+        background-position: right 0;
+        background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542815319158&di=7c43a06f8115ba5474017ac637e7ae2f&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170721%2F51aa988dd9e14d368092c64ceca4b40f_th.jpg);
+        transition: 2s steps(15);
+    }
+    input:checked+h1 *{
+        margin-left: 82px;
+        transition: 2s ;
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" hidden id="ap" >
+        <h1><label for="ap"></label></h1>
+        
+    </div>
+</body>
+</html>
