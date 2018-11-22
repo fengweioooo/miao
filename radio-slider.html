@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 600px;
+            height: 500px;
+            position: relative;
+            margin: auto;
+            
+        }
+        .a img{
+            width: 600px;
+            height: 500px;
+            position: absolute;
+            opacity: 0;
+            transition:cubic-bezier(.43,1.55,.51,-0.7) 3s;
+        }
+        .a input:checked +*+*+*+div *{
+            opacity: 1;
+        }
+        .a section{
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align:center;
+        }
+        label{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(90,90, 54, 0.5);
+            margin: 20px;
+            border-radius: 25px;
+        }
+
+    </style>
+
+</head>
+<body>
+ <div class="a">
+     <input type="radio" name="op" id="1" hidden checked>
+     <input type="radio" name="op" id="2" hidden>
+     <input type="radio" name="op" id="3" hidden>
+     <input type="radio" name="op" id="4" hidden>
+         <div>
+         <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542883784277&di=97cc77647d01cb9f45bffc0c38203744&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F18%2F24%2F76%2F42r58PICPEH_1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542883781827&di=d5f8a3e381bdd7b6db701874c73d06d7&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F68%2F55%2F15685590-04744be61a60bf997f9bd65fdfd8ea3d-0.jpg" alt="">
+        </div> 
+         <div>
+             <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542883779913&di=ab52bd051158ea12903b55b27b7e3445&imgtype=0&src=http%3A%2F%2Fpic71.nipic.com%2Ffile%2F20150709%2F19840226_164239490848_2.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542883793792&di=a8085be43af6b505b8f88c108274100c&imgtype=0&src=http%3A%2F%2Fimg04.tooopen.com%2Fimages%2F20131113%2Fsy_47059351383.jpg" alt="">
+        </div> 
+        <section>
+        <label for="1">1</label>
+        <label for="2">2</label>
+        <label for="3">3</label>
+        <label for="4">4</label>
+    </section>
+ </div>
+</body>
+</html>
