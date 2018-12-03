@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mobike</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    .a{
+        width: 100%;
+        min-height: 800px;
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-8.jpg);
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: center center !important;
+        transition: 1s;
+        margin-bottom: 1px;
+    }
+
+
+    #b{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg);
+    }
+    #c{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg);
+    }
+    #d{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg);
+    }
+    #e{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg);
+    }
+    .yy{
+        width: 25%;
+        min-height: 300px;
+        float: left;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: center center;
+        border: 1px solid rgba(0,0,0,0);
+        transition: 1s;
+        box-sizing: border-box;
+
+    }
+    @media screen and (max-width:800px){ 
+.yy{
+    width: 50%;
+    min-height: 250px;
+    transition: 1s;
+    }
+        .a{
+        width: 100%;
+        min-height: 500px;
+        transition: 1s;
+        }
+}
+@media screen and (max-width:600px){
+    .yy{
+    width: 25%;
+    min-height: 500px;
+    transition: 1s;}
+        .a{
+        width: 100%;
+        min-height: 500px;
+        transition: 1s; 
+        }
+}
+
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="aa">
+    <div id="b" class="yy"></div>
+    <div id="c" class="yy"></div>
+    <div id="d" class="yy"></div>
+    <div id="e" class="yy"></div>
+
+    </div>
+
+</body>
+</html>
