@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin: 0;
+            margin-left: 50px;
+
+        }
+    div{
+        width: 200px;
+        height: 200px ;
+        background-color: rgba(0, 0, 0, 0.08);
+        position: relative;  
+    }
+    span{
+        background-color: azure;
+    }
+    .a>span{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .b{
+        line-height: 200px;
+        text-align: center;
+
+    }
+    .c{
+        display:table-cell;
+        vertical-align:middle;
+        text-align: center;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <h2>定位居中</h2>
+    <div class="a"><span>abc</span></div>
+    <h2>行内居中</h2>
+    <div class="b"><span>abc</span></div>
+    <h2>表格居中</h2>
+    <div class="c"><span>abc</span></div>
+</body>
+</html>
