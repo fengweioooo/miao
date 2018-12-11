@@ -8,8 +8,8 @@
     <style>
 
     .foo{
-        width: 800px;
-        height: 800px;
+        width: 200px;
+        height: 200px;
         position: relative;
         transform-style:preserve-3d;
         transform: rotateX(-24deg) rotateY(20deg) rotateZ(0deg) ;
@@ -19,8 +19,8 @@
     }
 
     div{
-        width: 300px;
-        height: 300px;
+        width: 100px;
+        height: 100px;
         position: absolute;
         margin: auto;
         left: 0;
@@ -41,28 +41,28 @@
     }
     .a{
         background-color: red;
-        transform: rotatex(0deg) rotateY(0deg)  translateZ(150px);
+        transform: rotatex(0deg) rotateY(0deg)  translateZ(50px);
     }
     .b{
         background-color: blue;
-        transform: rotateY(90deg) translateZ(150px);
+        transform: rotateY(90deg) translateZ(50px);
     }
     .c{
         background-color: cadetblue;
-        transform:translateZ(-150px);
+        transform:translateZ(-50px);
     }
     .d{
         background-color: chocolate;
-        transform: rotateY(-90deg) translateZ(150px);
+        transform: rotateY(-90deg) translateZ(50px);
         
     }
     .e{
         background-color: darkmagenta;
-        transform: rotateX(90deg) translateZ(150px)
+        transform: rotateX(90deg) translateZ(50px)
     }
    .f{
     background-color: pink;
-    transform: rotateX(90deg) translateZ(-150px)
+    transform: rotateX(90deg) translateZ(-50px)
 }
     section:hover {
         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -71,32 +71,32 @@
 
          }
          section:hover .a {
-             transform: rotateX(0deg) rotateY(0deg) translateZ(180px);
+             transform: rotateX(0deg) rotateY(0deg) translateZ(80px);
              background-color: black;
          }
          section:hover .b {
-             transform: rotateY(90deg) rotateX(0deg) translateZ(180px);
+             transform: rotateY(90deg) rotateX(0deg) translateZ(80px);
              background-color: black;
 
 
          }
          section:hover .c {
-             transform: rotateX(0deg) translateZ(-180px);
+             transform: rotateX(0deg) translateZ(-80px);
              background-color: black;
          }
          section:hover .d {
-             transform: rotateY(-90deg) rotateX(0deg) translateZ(180px);
+             transform: rotateY(-90deg) rotateX(0deg) translateZ(80px);
              background-color: black;
 
          }
          section:hover .e {
-             transform: rotateX(90deg) rotateY(0deg) translateZ(180px);
+             transform: rotateX(90deg) rotateY(0deg) translateZ(80px);
              background-color: black;
 
 
          }
          section:hover .f {
-             transform:rotateX(90deg) translateZ(-180px);
+             transform:rotateX(90deg) translateZ(-80px);
              background-color: black;
          }
          @keyframes foo{
