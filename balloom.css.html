@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 100px;
+        }
+    div{
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        border-radius:25px ;
+        position: relative;
+        text-align: center;
+    }
+    a{
+        color:black;
+        font-size: 20px;
+        font-family:"FZYaoti";
+        text-decoration:none;
+        line-height: 100px;
+    }
+
+    div:hover ::before{
+        content: '\2708''\2708''\2708''\2708''\2708''\2708''\2708';
+        position: absolute;
+        background-color: black;
+        color: #fff;
+        margin-top: -40px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+        left: 10px;
+    }
+    div:hover ::after{
+        content: "" ;
+        position: absolute;
+        margin-top: -10px;
+        left: 50px; 
+        border-top: 10px solid black;
+        border-bottom: 10px solid rgba(0,0,0,0);
+        border-left: 10px solid rgba(0,0,0,0);
+        border-right:10px solid rgba(0,0,0,0);
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div>
+        <a href="">hover me!</a>
+    </div>
+</body>
+</html>
