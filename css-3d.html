@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    .foo{
+        width: 800px;
+        height: 800px;
+        position: relative;
+        transform-style:preserve-3d;
+        transform: rotateX(-24deg) rotateY(20deg) rotateZ(0deg) ;
+        transition: 5s  ;
+        border: 1px solid;
+        animation: foo 5s infinite;    
+    }
+
+    div{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: 5s;
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid ;
+        perspective: 200px;
+        opacity: 0.8;
+
+    }
+    span{
+        text-align: center;
+        line-height: 250px;
+    }
+    .a{
+        background-color: red;
+        transform: rotatex(0deg) rotateY(0deg)  translateZ(150px);
+    }
+    .b{
+        background-color: blue;
+        transform: rotateY(90deg) translateZ(150px);
+    }
+    .c{
+        background-color: cadetblue;
+        transform:translateZ(-150px);
+    }
+    .d{
+        background-color: chocolate;
+        transform: rotateY(-90deg) translateZ(150px);
+        
+    }
+    .e{
+        background-color: darkmagenta;
+        transform: rotateX(90deg) translateZ(150px)
+    }
+   .f{
+    background-color: pink;
+    transform: rotateX(90deg) translateZ(-150px)
+}
+    section:hover {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        transition:  2s 2s ease-out ;
+        border: none;
+
+         }
+         section:hover .a {
+             transform: rotateX(0deg) rotateY(0deg) translateZ(180px);
+             background-color: black;
+         }
+         section:hover .b {
+             transform: rotateY(90deg) rotateX(0deg) translateZ(180px);
+             background-color: black;
+
+
+         }
+         section:hover .c {
+             transform: rotateX(0deg) translateZ(-180px);
+             background-color: black;
+         }
+         section:hover .d {
+             transform: rotateY(-90deg) rotateX(0deg) translateZ(180px);
+             background-color: black;
+
+         }
+         section:hover .e {
+             transform: rotateX(90deg) rotateY(0deg) translateZ(180px);
+             background-color: black;
+
+
+         }
+         section:hover .f {
+             transform:rotateX(90deg) translateZ(-180px);
+             background-color: black;
+         }
+         @keyframes foo{
+                 0%{
+                    transform: rotateX(-24deg) rotateY(20deg) rotateZ(100deg);
+                 }
+                 100%{
+                    transform: rotateX(336deg) rotateY(380deg) rotateZ(360deg) ;
+                   
+                 }
+         }
+    </style>
+</head>
+<body>
+<section class="foo">
+    <div class="a"><span></span></div>
+    <div class="b"><span></span></div>
+    <div class="c"><span></span></div>
+    <div class="d"><span></span></div>
+    <div class="e"><span></span></div>
+    <div class="f"><span></span></div>
+</section>
+<section class="fcc"></section>
+    
+</body>
+</html>
