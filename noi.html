@@ -43,15 +43,33 @@ var c = (b*100/a).toFixed(3)+ "%"
 console.log(c)
 </script>
 
-<script>
+<script id="ch0103/07" type="1.1.7">
 var x = +prompt("实数X")
 var a = +prompt("参数A")
 var b = +prompt("参数B")
 var c = +prompt("参数C")
 var d = +prompt("参数D")
-var 
+var fx = ((a*x*x*x)+(b*x*x)+(c*x)+d).toFixed(7)
+console.log(fx)
+</script>
 
+<script id="ch0103/08" type="1.1.8">
+var f = +prompt("华氏温度")
+var c = (5*(f-32)/9).toFixed(5)
+console.log(c)
+</script>
 
+<script id="ch0103/09" type="1.1.9">
+var r = +prompt("圆的半径")
+var zj = (r*2).toFixed(4)
+var zc = (2*Math.PI*r).toFixed(4)
+var mj = (Math.PI*r*r).toFixed(4)
+console.log(zj,zc,mj)
+</script>
 
-
+<script id="ch0103/10" type="1.1.10">
+var r1 = +prompt("电阻r1")
+var r2 = +prompt("电阻r2")
+var R = (1/(1/r1+1/r2)).toFixed(2)
+console.log(R)
 </script>
