@@ -231,3 +231,168 @@ console.log("YES")
 else 
 console.log("NO")
 </script>
+
+<script id="ch0104/09" type="1.2.9">
+var n = +prompt("判断此数是否能被3 5 7 整除")
+if (n%3==0&&n%5==0&&n%7==0)
+console.log("3 5 7")
+else 
+console.log("NO")
+</script>
+
+<script id="ch0104/10" type="1.2.10">
+var Y = +prompt("语文成绩")
+var S = +prompt("数学成绩")
+if(Y < 60 , S < 60){
+    console.log("0")
+ } else 
+    console.log("1");
+</script>
+
+<script id="ch0104/11" type="1.2.11">
+var J = prompt("晶晶想约贝贝的日期")
+var B = "1" 
+var C = "3"
+var D = "5"
+if(J==B | J==C | J==D){
+    console.log("NO")
+} else{
+    console.log("YES")
+}
+</script>
+
+<script id="ch0104/12" type="1.2.12">
+var m = +prompt("路程/米")
+var off = 27+23
+var C = (m/3)+off
+var B =  m/1.2
+if(C < B){
+    console.log("Bike")
+} else if (C == B){
+    console.log("All")
+} else {
+    console.log("Walk")
+}
+</script>
+
+<script id="ch0104/13" type="1.2.13">
+var x = +prompt("")
+if (0 <= x < 5){
+    console.log((y=-x+2.5).toFixed(3))
+} else if ( 5 <= x < 10){
+    console.log((y=2-1.5(x-3)(x-3)).toFixed(3))
+} else if (10 <= x < 20){
+    console.log((y=x/2-1.5).toFixed(3))
+}
+</script>
+
+<script id="ch0104/14" type="1.2.14">
+var z = prompt("重量")
+var j = prompt("是否加急")
+if (z<1000||z==1000&&j=="y"){
+    console.log(8+5)
+} else if (z<1000||z==1000&&j=="n"){
+    console.log(8)
+} else if (z>1000&&j=="y"){
+    money=Math.ceil((z-1000)/500)*4+8+5
+    console.log(money)
+} else if (z>1000&&j=="n"){
+    money=Math.ceil((z-1000)/500)*4+8
+    console.log(money)
+}
+</script>
+
+<script id="ch0104/15" type="1.2.15">
+var a = +prompt("")
+var b = +prompt("")
+var c = +prompt("")
+if(a<b&&b<c){
+    console.log(c)
+} else if (c<b&&b<a){
+    console.log(a)
+} else if (b>c&&c>a){
+    console.log(b)
+}
+</script>
+
+<script id="ch0104/16" type="1.2.16">
+var a = +prompt("")
+var b = +prompt("")
+var c = +prompt("")
+if (a+b>c&&a+c>b&&c+b>a){
+    console.log("YES")
+}else{
+    console.log("NO")
+}
+</script>
+
+<script id="ch0104/17" type="1.2.17">
+var g = +prompt("判断这个是不是闺年")
+if (g%400==0||g%4==0&&g%100!=0){
+    console.log("Y")
+} else{
+    console.log("N")
+}
+</script>
+
+<script id="ch0104/18" type="1.2.18">
+var x = +prompt('')
+var y = +prompt('')
+if((x>-1||x==-1)&&(x<1||x==1)&&(y>-1||y==-1)&&(y<1||y==1)){
+    console.log("YES")
+}else{
+    console.log("NO")
+}
+</script>
+
+<script>
+
+
+
+</script>
+
+<script id="ch0104/20" type="1.2.20">
+var a = +prompt('')
+var b = +prompt('')
+var c = +prompt('')
+var d = b*b-4*a*c
+if(d>0){
+    var x1=(-b-Math.sqrt(d))/(2*a)
+    var x2=(-b+Math.sqrt(d))/(2*a)
+    console.log(x1.toFixed(5),x2.toFixed(5))
+}else if(d==0){
+    var x1=(-b)/(2*a)
+    var x2=(-b)/(2*a)
+    console.log(x1.toFixed(5),x2.toFixed(5))
+}else{
+    var N=(-b/2/a)
+    var M=Math.sqrt(-d)/2/a
+    x1=N.toFixed(5)+"-"+M.toFixed(5)+"i"
+    y1=N.toFixed(5)+"+"+M.toFixed(5)+"i"
+    console.log(x1,x2)
+}
+</script>
+
+<script id="ch0104/21" type="1.2.21">
+var n = +prompt('')
+var x = +prompt('')
+var y = +prompt('')
+var z = n-Math.ceil(y/x)
+console.log(z);
+</script>
+
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
